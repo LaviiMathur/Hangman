@@ -14,7 +14,7 @@ function Word({ wordToGuess, gussedLetter, isLoser }) {
           </span>
         </div>
       ))}
-      {console.log(gussedLetter, wordToGuess)}
+      {console.log(wordToGuess)}
     </div>
   );
 }
