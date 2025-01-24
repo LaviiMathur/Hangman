@@ -1,6 +1,6 @@
 function Word({ wordToGuess, gussedLetter, isLoser }) {
   return (
-    <div className="flex gap-1 font-mono text-4xl uppercase">
+    <div className="flex gap-1 font-mono text-3xl md:text-5xl uppercase">
       {wordToGuess.split("").map((letter, index) => (
         <div className="border-b-2 border-black" key={index}>
           <span
@@ -14,7 +14,7 @@ function Word({ wordToGuess, gussedLetter, isLoser }) {
           </span>
         </div>
       ))}
-      {console.log(wordToGuess)}
+
     </div>
   );
 }
