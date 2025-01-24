@@ -29,7 +29,7 @@ function Keyboard({ addGuessedLatter, disabled }) {
           {row.map((key, keyIndex) => (
             <button
               key={keyIndex}
-              onClick={() => addGuessedLatter(key)}
+              onClick={() => addGuessedLatter(key.toLowerCase())}
               disabled={disabled}
               aria-disabled={disabled}
               className={`w-8 h-8 md:w-16 md:h-16 border-4 border-black hover:bg-slate-400 active:bg-slate-500 active:scale-105 font-medium text-lg md:text-2xl ${
